@@ -24,5 +24,4 @@ export function intialPageLoad() {
     para3.classList.add('landing-page-copy');
     para3.textContent = 'Thanks, Hulk!'
     contentDiv.appendChild(para3);
-
 }
