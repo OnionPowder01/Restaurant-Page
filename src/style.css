@@ -1,0 +1,50 @@
+/* _________ custom colours and fonts __________ */
+
+:root {
+    --darkgreen:#2E5A1E;
+    --mediumgreen:#387327;
+    --lightergreen:#428229;
+    --offwhite:	#FAF9F6;
+}
+
+@font-face {
+    font-family: customFont-h1;
+    src: url('assets/SmashWallPersonalUse-rg30A.ttf');
+}
+
+@font-face {
+    font-family: customFont-p;
+    src: url('assets/hulk.ttf');
+}
+
+
+/* _________ Main __________ */
+
+body {
+    background-image: url('assets/hulk-background.jpg');
+    background-size: cover;
+    
+}
+
+#content {
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+h1 {
+    font-family: customFont-h1;
+    color: var(--mediumgreen);
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.landing-page-copy {
+    color: var(--offwhite);
+    font-family: customFont-p;
+    font-weight: 900;
+    font-size: 1.2rem;
+
+
+
