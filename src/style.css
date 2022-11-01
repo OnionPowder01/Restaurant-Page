@@ -17,19 +17,19 @@
     src: url('assets/hulk.ttf');
 }
 
-
 /* _________ Main __________ */
 
 body {
+    
     background-image: url('assets/hulk-background.jpg');
     background-size: cover;
+    margin: 0px;
+    padding: 0px;
     
 }
 
 #content {
     min-height: 100vh;
-    margin: 0px;
-    padding: 0px;
     text-align: center;
 }
 
@@ -37,14 +37,93 @@ body {
     font-family: customFont-h1;
     color: var(--mediumgreen);
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
-.landing-page-copy {
+.landing-page-copy, .menu-copy, .contact-copy {
     color: var(--offwhite);
     font-family: customFont-p;
     font-weight: 900;
     font-size: 1.2rem;
 }
+
+/* _________ Nav-bar __________ */
+
+header {
+    background-color: black;
+    height: 50px;
+    margin-top: -1em;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0px;
+    align-items: center;
+    height: 50px;
+    color: var(--offwhite);
+    font-family: customFont-p;
+    font-size: 1.5rem;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    /*
+    background:  green;
+    border-radius: 5px 5px 0px 0px;
+    border-top: 10px solid green;
+    border-left: 10px solid green;
+    border-right: 10px solid green;
+    border-bottom: 10px solid green;\
+    */
+    cursor: pointer;
+}
+
+/* _________ Nav-bar effects __________ */
+
+.hvr-shutter-out-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-shutter-out-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--lightergreen);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+    color: rgb(11, 11, 11);
+  }
+  .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+
+
 
 

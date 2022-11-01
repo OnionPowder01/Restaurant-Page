@@ -24,4 +24,14 @@ export function intialPageLoad() {
     para3.classList.add('landing-page-copy');
     para3.textContent = 'Thanks, Hulk!'
     contentDiv.appendChild(para3);
+  
+     /* _________ Classes added to nav bar for hover effect __________ */
+    const home = document.querySelector('.home');
+    home.classList.add("hvr-shutter-out-horizontal")
+
+    const menu = document.querySelector('.menu');
+    menu.classList.add("hvr-shutter-out-horizontal")
+
+    const contact = document.querySelector('.contact');
+    contact.classList.add("hvr-shutter-out-horizontal");
 }
