@@ -1,5 +1,17 @@
-import * as module from './initial-page-load.js'; 
+import { initialPageLoad } from './initial-page-load.js'; 
+import { menu } from "./menu.js";
+import './style.css';
 
-console.log('Hello there');
+initialPageLoad();
 
-module.intialPageLoad();
+let NavModule = (function() {
+
+    const homeTab = document.querySelector(".home");
+    homeTab.addEventListener("click", initialPageLoad);
+
+    const menuTab = document.querySelector(".menu");
+    menuTab.addEventListener("click", menu)
+
+})();
+
+console.log("Hi bitch");

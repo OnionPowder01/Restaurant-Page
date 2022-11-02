@@ -1,5 +1,8 @@
-export function intialPageLoad() {
+export function initialPageLoad() {
     const contentDiv = document.querySelector("#content");
+
+    //Remove any existing DOM children if present
+    contentDiv.replaceChildren(); 
 
     /* _________ page-title __________ */
     
@@ -26,6 +29,7 @@ export function intialPageLoad() {
     contentDiv.appendChild(para3);
   
      /* _________ Classes added to nav bar for hover effect __________ */
+     
     const home = document.querySelector('.home');
     home.classList.add("hvr-shutter-out-horizontal")
 
