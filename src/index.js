@@ -13,5 +13,3 @@ let NavModule = (function() {
     menuTab.addEventListener("click", menu)
 
 })();
-
-console.log("Hi bitch");
