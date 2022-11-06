@@ -3,10 +3,16 @@ import tomahawkImg from './assets/images/TomahawkSteak.jpg';
 import fullEnglishBreakfast from './assets/images/full english breakfast.jpg'
 import burger from "./assets/images/Burger.jpg"
 import enchilada from "./assets/images/Beef-Enchilada.jpg"
+import hulk from './assets/images/hulk-background.jpg'
 
 export function menu() {
 
+//Hulk background image
+document.body.style.backgroundImage = `url('${hulk}')`;
+document.body.style.backgroundSize = 'cover';   
+
 const contentDiv = document.querySelector("#content");
+
 const container = document.createElement("div")
 container.classList.add('container')
 
