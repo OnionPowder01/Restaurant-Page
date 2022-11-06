@@ -1,4 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*  _____________________________________ Custom colours and fonts _____________________________________ */
+
+:root {
+    --darkgreen:#2E5A1E;
+    --mediumgreen:#387327;
+    --lightergreen:#428229;
+    --offwhite:	#FAF9F6;
+}
 
 html {
   font-family: 'Montserrat', Arial, sans-serif;
@@ -7,7 +14,8 @@ html {
 }
 
 body {
-  background: #F2F3EB;
+  margin: 0px;
+  padding: 0px;    
 }
 
 button {
@@ -19,7 +27,7 @@ button, select {
 }
 
 button, input, select, textarea {
-  color: #5A5A5A;
+  color: var(--offwhite);
   font: inherit;
   margin: 0;
 }
@@ -32,20 +40,29 @@ textarea {
   overflow: auto;
 }
 
+.contact-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10em;
+}
+
+
 #container {
-  border: solid 3px #474544;
+  border: solid 3px var(--offwhite);
   max-width: 768px;
-  margin: 60px auto;
+  margin-right: 5em;
   position: relative;
 }
 
+
 form {
   padding: 37.5px;
-  margin: 50px 0;
+  margin: 0px;
 }
 
 h1 {
-  color: #474544;
+  color: var(--offwhite);
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 7px;
@@ -54,7 +71,7 @@ h1 {
 }
 
 .underline {
-  border-bottom: solid 2px #474544;
+  border-bottom: solid 2px var(--offwhite);
   margin: -0.512em auto;
   width: 80px;
 }
@@ -66,7 +83,7 @@ h1 {
 
 .icon {
   display: block;
-  fill: #474544;
+  fill: var(--offwhite);
   height: 50px;
   margin: 0 auto;
   width: 50px;
@@ -80,8 +97,8 @@ h1 {
 input[type='text'], [type='email'], select, textarea {
 	background: none;
   border: none;
-	border-bottom: solid 2px #474544;
-	color: #474544;
+	border-bottom: solid 2px var(--offwhite);
+	color: var(--offwhite);
 	font-size: 1.000em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -142,27 +159,27 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-	color: #474544;
+	color: var(--offwhite);
 }
 
 :-moz-placeholder { 
-	color: #474544;
+	color: var(--offwhite);
 	opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: #474544;
+	color: var(--offwhite);
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #474544;
+	color: var(--offwhite);
 }
 
 #form_button {
   background: none;
-  border: solid 2px #474544;
-  color: #474544;
+  border: solid 2px var(--offwhite);
+  color: var(--offwhite);
   cursor: pointer;
   display: inline-block;
   font-family: 'Helvetica', Arial, sans-serif;
@@ -187,12 +204,29 @@ textarea {
   #container {
     margin: 20px auto;
     width: 95%;
+    
+  }
+  .contact-class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10em;
   }
 }
 
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 26px;
+    
+  }
+
+  .contact-class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10em;
   }
   
   .underline {
@@ -207,6 +241,14 @@ textarea {
 @media screen and (max-width: 420px) {
   h1 {
     font-size: 18px;
+  }
+
+  .contact-class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10em;
   }
   
   .icon {

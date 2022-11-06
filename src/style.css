@@ -24,7 +24,7 @@ body {
     padding: 0px;    
 }
 
-#content {
+.content-class {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;

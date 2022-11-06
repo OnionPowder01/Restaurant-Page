@@ -1,10 +1,8 @@
 import { contact } from './contact.js';
 import { initialPageLoad } from './initial-page-load.js'; 
 import { menu } from "./menu.js";
-import './style.css';
-import './contact.css'
 import hulk from './assets/images/hulk-background.jpg'
-import 'bootstrap';
+import 'bootstrap'
 
 
 initialPageLoad();

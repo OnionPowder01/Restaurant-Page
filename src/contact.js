@@ -3,15 +3,19 @@ import black from './assets/images/black.jpg'
 import hulk from './assets/images/hulk-background.jpg'
 import 'bootstrap';
 import './contact.css';
+import './map.css';
 
 export function contact() {
 
-//Remove existing background
-document.body.style.backgroundImage = 'none';
 
-const contentDiv = document.querySelector("#content");
 //Remove any existing DOM children if present
+const contentDiv = document.querySelector("#content");
 contentDiv.replaceChildren();
+
+contentDiv.classList.remove('content-class');
+
+contentDiv.classList.add('contact-class');
+
 
 contentDiv.innerHTML = `
 <div id="container">
@@ -41,9 +45,9 @@ contentDiv.innerHTML = `
     <label for="subject"></label>
     <select placeholder="Subject line" name="subject" id="subject_input" required>
       <option disabled hidden selected>Subject line</option>
-      <option>I'd like to start a project</option>
+      <option>I'd like to know your disponibility</option>
       <option>I'd like to ask a question</option>
-      <option>I'd like to make a proposal</option>
+      <option>I'd like to make a reservation</option>
     </select>
   </div>
   <div class="message">
@@ -56,6 +60,12 @@ contentDiv.innerHTML = `
 </form><!-- // End form -->
 </div><!-- // End #container -->
 
+<div class="map-container">
+        <h1>Find us</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.8434789897774!2d100.13792422342054!3d15.70645655426107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e04f147f3639fb%3A0xad1bf3ee6dc960fd!2sHulk%20Coffee%20And%20Restaurant!5e0!3m2!1sro!2sro!4v1667751089191!5m2!1sro!2sro" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </div>
 `
 
 

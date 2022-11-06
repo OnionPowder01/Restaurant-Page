@@ -1,0 +1,8 @@
+body {
+  box-sizing: border-box;
+}
+
+.map-container {
+    height: 460px;
+    margin-left: 5em;
+}
