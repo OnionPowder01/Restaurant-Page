@@ -8,10 +8,6 @@ import 'bootstrap'
 initialPageLoad();
 
 let NavModule = (function() {
-    
-//Hulk background image
-document.body.style.backgroundImage = `url('${hulk}')`;
-document.body.style.backgroundSize = 'cover';    
 
     const homeTab = document.querySelector(".home");
     homeTab.addEventListener("click", initialPageLoad);

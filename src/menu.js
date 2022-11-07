@@ -7,9 +7,6 @@ import hulk from './assets/images/hulk-background.jpg'
 
 export function menu() {
 
-//Hulk background image
-document.body.style.backgroundImage = `url('${hulk}')`;
-document.body.style.backgroundSize = 'cover';   
 
 const contentDiv = document.querySelector("#content");
 
