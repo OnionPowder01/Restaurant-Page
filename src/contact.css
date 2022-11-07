@@ -206,13 +206,15 @@ textarea {
     width: 95%;
     
   }
+  
   .contact-class {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10em;
+    margin-top: 2em;
   }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -226,7 +228,7 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10em;
+    margin-top: 2em;
   }
   
   .underline {
@@ -248,7 +250,7 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10em;
+    margin-top: 2em;
   }
   
   .icon {

@@ -1,8 +1,24 @@
 body {
   box-sizing: border-box;
 }
+.map-container {
+  margin-bottom: 20px;
+}
+
+.frame-container {
+  width: 600px;
+  height: 600px;
+}
+
+@media screen and (max-width: 768px) {
+.frame-container {
+  width: 350px;
+  height: 400px;
+  margin: 5px;
+}
 
 .map-container {
-    height: 460px;
-    margin-left: 5em;
+  margin-bottom: 0px;
+}
+
 }

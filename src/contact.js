@@ -62,8 +62,8 @@ contentDiv.innerHTML = `
 
 <div class="map-container">
         <h1>Find us</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.8434789897774!2d100.13792422342054!3d15.70645655426107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e04f147f3639fb%3A0xad1bf3ee6dc960fd!2sHulk%20Coffee%20And%20Restaurant!5e0!3m2!1sro!2sro!4v1667751089191!5m2!1sro!2sro" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="frame-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.8434789897774!2d100.13792422342054!3d15.70645655426107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e04f147f3639fb%3A0xad1bf3ee6dc960fd!2sHulk%20Coffee%20And%20Restaurant!5e0!3m2!1sro!2sro!4v1667751089191!5m2!1sro!2sro" 
+         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
     </div>
 `
