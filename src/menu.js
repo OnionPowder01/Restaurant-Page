@@ -1,15 +1,16 @@
-import './style.css';
 import tomahawkImg from './assets/images/TomahawkSteak.jpg';
 import fullEnglishBreakfast from './assets/images/full english breakfast.jpg'
 import burger from "./assets/images/Burger.jpg"
 import enchilada from "./assets/images/Beef-Enchilada.jpg"
-import hulk from './assets/images/hulk-background.jpg'
+import './style.css';
 import './menu.css'
 
 export function menu() {
 
 
 const contentDiv = document.querySelector("#content");
+contentDiv.classList.add('content-class');
+contentDiv.classList.remove('contact-class');
 
 const container = document.createElement("div")
 container.classList.add('container')

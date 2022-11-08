@@ -1,6 +1,3 @@
-import avengers from './assets/images/avengers.jpg';
-import black from './assets/images/black.jpg'
-import hulk from './assets/images/hulk-background.jpg'
 import 'bootstrap';
 import './contact.css';
 import './map.css';
@@ -15,6 +12,8 @@ contentDiv.replaceChildren();
 contentDiv.classList.remove('content-class');
 
 contentDiv.classList.add('contact-class');
+
+
 
 
 contentDiv.innerHTML = `

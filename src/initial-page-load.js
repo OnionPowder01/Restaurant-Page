@@ -1,6 +1,7 @@
-
 export function initialPageLoad() {
     const contentDiv = document.querySelector("#content");
+    contentDiv.classList.add('content-class');
+    contentDiv.classList.remove('contact-class');
 
     //Remove any existing DOM children if present
     contentDiv.replaceChildren(); 
