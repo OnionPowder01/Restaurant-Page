@@ -16,11 +16,13 @@ header {
     color: var(--offwhite);
     font-family: customFont-p;
     font-size: 1.5rem;
+    cursor:pointer;
   }
   
   li {
     display: flex;
     align-items: center;
+    cursor:pointer;
   }
   
   /*  _____________________________________ Nav-bar effect _____________________________________ */
