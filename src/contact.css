@@ -7,6 +7,8 @@
     --offwhite:	#FAF9F6;
 }
 
+/*  _____________________________________ Form  _____________________________________ */
+
 html {
   font-family: 'Montserrat', Arial, sans-serif;
   -ms-text-size-adjust: 100%;
@@ -199,6 +201,8 @@ textarea {
   background: #474544;
   color: #F2F3EB;
 }
+
+/*  _____________________________________ Responsive _____________________________________ */
 
 @media screen and (max-width: 768px) {
   #container {

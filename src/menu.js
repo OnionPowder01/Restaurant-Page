@@ -4,6 +4,7 @@ import fullEnglishBreakfast from './assets/images/full english breakfast.jpg'
 import burger from "./assets/images/Burger.jpg"
 import enchilada from "./assets/images/Beef-Enchilada.jpg"
 import hulk from './assets/images/hulk-background.jpg'
+import './menu.css'
 
 export function menu() {
 
